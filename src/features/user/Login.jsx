@@ -19,7 +19,7 @@ function Login(){
             // console.log(isLoggedin)
             navigate("/dashboard")
         }
-    },[])
+    },[isLoggedin,navigate])
 
     var loginForm=useFormik({
         initialValues:{username:"",password:""},

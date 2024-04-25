@@ -27,7 +27,7 @@ function ManagerDashboard() {
 
   useEffect(() => {
     ticketsFn().then((res) => { setAllpro(res.data) })
-  }, [])
+  }, [ticketsFn])
 
   function search(e) {
     setObj({ ...sortObj, search: e.target.value })
@@ -68,11 +68,7 @@ function ManagerDashboard() {
     }
     if (a.radio) {
       console.log(a.radio);
-      filterData = filterData.filter((t) => {
-        if (t.status === a.radio) {
-          return t
-        }
-      })
+      filterData = filterData.filter((t) => t.status === a.radio)
     }
     if(a.checkbox.length)
     {
@@ -124,7 +120,7 @@ function ManagerDashboard() {
                 <td>
                   <select onChange={(e) => { setSelectedEmployeeId(e.target.value) }}>
                     <option value="null" disabled selected>Please Select Employee</option>
-                    {ticket.employeeId && <option value={ticket.employeeId} selected>{employeesData.find((a) => a.id == ticket.employeeId).username}</option>}
+                    {ticket.employeeId && <option value={ticket.employeeId} selected>{employeesData.find((a) => a.id === ticket.employeeId).username}</option>}
                     {!ticket.employeeId && employeesData.map((employee) => {
                       return <option value={employee.id}  >{employee.username}</option>
                     })

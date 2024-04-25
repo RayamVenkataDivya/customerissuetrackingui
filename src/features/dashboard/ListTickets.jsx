@@ -16,7 +16,7 @@ function ListTickets(){
 
         // listTicketsFn()
         fn(cid)
-    },[])
+    },[fn,cid])
     // console.log(data)
   var [updatedTicketFn] = useUpdateTicketMutation();
   

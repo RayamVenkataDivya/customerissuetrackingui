@@ -125,6 +125,16 @@
       "customerName": "manvi",
       "status": "completed",
       "employeeId": "3"
+    },
+    {
+      "id": "526f",
+      "issue": "new type",
+      "IssueType": "electric",
+      "image": "",
+      "date": 1714050505491,
+      "customerId": "5",
+      "customerName": "divya",
+      "status": "customer rejected"
     }
   ]
 }

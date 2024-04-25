@@ -17,7 +17,7 @@ function Dashboard(){
             // console.log(isLoggedin)
             navigate("/login")
         }
-    },[])
+    },[isLoggedin,navigate])
 
     if(JSON.parse(window.localStorage.getItem("user")))
 

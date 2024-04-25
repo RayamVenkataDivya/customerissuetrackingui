@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLazyEmployeeListTicketsQuery, useUpdateEmployeeTicketMutation,useLazyListTicketsQuery} from '../../services/ticketApi'
+import { useLazyEmployeeListTicketsQuery, useUpdateEmployeeTicketMutation} from '../../services/ticketApi'
 
 function EmployeeDashboard(){
     var id=JSON.parse(window.localStorage.getItem("user"))[0].id
@@ -37,7 +37,7 @@ function EmployeeDashboard(){
 
     React.useEffect(()=>{
         employeeFn(id)
-    },[])
+    },[employeeFn,id])
 
     return (
         <div>
