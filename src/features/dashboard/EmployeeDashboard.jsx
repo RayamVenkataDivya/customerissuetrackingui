@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLazyEmployeeListTicketsQuery, useUpdateEmployeeTicketMutation,useLazyListTicketsQuery, useEmployeeListTicketsQuery } from '../../services/ticketApi'
+import { useLazyEmployeeListTicketsQuery, useUpdateEmployeeTicketMutation,useLazyListTicketsQuery} from '../../services/ticketApi'
 
 function EmployeeDashboard(){
     var id=JSON.parse(window.localStorage.getItem("user"))[0].id
@@ -8,7 +8,6 @@ function EmployeeDashboard(){
     // console.log(empFn)
     // console.log(data)
     var [employeeUpdateFn]=useUpdateEmployeeTicketMutation()
-    var [allTicketsFn]=useLazyListTicketsQuery()
     // var [listFn]=useLazyListTicketsQuery()
     var {username} = JSON.parse(window.localStorage.getItem("user"))[0]
 
@@ -42,7 +41,7 @@ function EmployeeDashboard(){
 
     return (
         <div>
-        <h3 className='mb-5'>{username.toUpperCase()+"'"+"s"+" "}EmployeeDashboard</h3>
+        <h3 className='mb-5'>{username.toUpperCase()+" "}EmployeeDashboard</h3>
         <table className='table table-bordered table-secondary' style={{width:"650px",marginLeft:"23%"}}>
             <thead>
                 <tr align="center">

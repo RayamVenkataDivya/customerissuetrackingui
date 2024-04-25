@@ -21,7 +21,7 @@ function Dashboard(){
 
     if(JSON.parse(window.localStorage.getItem("user")))
 
-    var {username,role} = JSON.parse(window.localStorage.getItem("user"))[0]
+    var {role} = JSON.parse(window.localStorage.getItem("user"))[0]
     // console.log(isLoggedin);
     return (
         <div className='container'>

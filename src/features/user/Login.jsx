@@ -46,7 +46,7 @@ function Login(){
         }
     })
     // var {username,role} = JSON.parse(window.localStorage.getItem("user"))[0]
-    var {isLoggedin}=useSelector((state)=>{return state.loginReducer})
+    // var {isLoggedin}=useSelector((state)=>{return state.loginReducer})
 
     // var navigate=useNavigate()
 

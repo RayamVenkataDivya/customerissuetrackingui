@@ -1,5 +1,5 @@
 import React from "react";
-import { useLazyListTicketsByUserIdQuery, useLazyListTicketsQuery, useListTicketsByUserIdQuery, useListTicketsQuery, useUpdateTicketMutation } from "../../services/ticketApi";
+import { useLazyListTicketsByUserIdQuery, useUpdateTicketMutation } from "../../services/ticketApi";
 function ListTickets(){
     var cid=JSON.parse(window.localStorage.getItem("user"))[0].id
     // console.log(cid)

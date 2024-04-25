@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useGetAllEmployeesQuery, useGetAllCustomerUsersQuery } from '../../services/userApi';
-import { useLazyListTicketsQuery, useListTicketsQuery, useUpdateTicketMutation } from '../../services/ticketApi';
+import { useGetAllEmployeesQuery} from '../../services/userApi';
+import { useLazyListTicketsQuery, useUpdateTicketMutation } from '../../services/ticketApi';
 
 function ManagerDashboard() {
   var { username } = JSON.parse(window.localStorage.getItem("user"))[0]
@@ -39,10 +39,10 @@ function ManagerDashboard() {
     checkfilters({ ...sortObj, radio: e.target.value })
   }
 
-  function sortCheckbox(e){
-    setObj({...sortObj, checkbox: e.target.value})
-    checkfilters({...sortObj,checkbox: e.target.value})
-  }
+  // function sortCheckbox(e){
+  //   setObj({...sortObj, checkbox: e.target.value})
+  //   checkfilters({...sortObj,checkbox: e.target.value})
+  // }
   
   function sortCheckbox(e){
     let checkArr=sortObj.checkbox
@@ -87,7 +87,7 @@ function ManagerDashboard() {
 
   return (
     <div className='container'>
-      <h3 className='mb-5'>{username.toUpperCase() + "'" + "S" + " "}ManagerDashboard</h3>
+      <h3 className='mb-5'>{username.toUpperCase() +" "}ManagerDashboard</h3>
       <div style={{ marginBottom: "20px", marginLeft: "450px" }}>
         <input type="text" placeholder='Search...' style={{ width: "350px", borderRadius: "4px" }} onKeyUp={(event) => { search(event) }}></input><br />
       </div>
