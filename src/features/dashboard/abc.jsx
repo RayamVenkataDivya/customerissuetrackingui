@@ -87,12 +87,12 @@ function ManagerDashboard() {
         <input type='radio' onChange={(event) => { sortStatus(event) }} name="tkt" value="customer rejected" id="t3" /><label for="t3">sort(customer rejected)</label>
       </div>
       
-      {/* <div>
+      <div>
         <h4>sortBy productName:</h4>
         <input type="checkbox" name="product" value="electric" id="d1" onChange={(e) => { handleCheckbox(e) }} /><label for="d1">electric</label><br />
         <input type="checkbox" name="product" value="building" id="d2" onChange={(e) => { handleCheckbox(e) }} /> <label for="d2">building</label><br />
         <input type="checkbox" name="product" value="water" id="d3" onChange={(e) => { handleCheckbox(e) }} /><label for="d3">water</label>
-      </div> */}
+      </div>
 
       <table className='table table-bordered table-secondary' style={{ width: "650px", marginLeft: "23%" }}>
         <thead>

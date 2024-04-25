@@ -40,6 +40,9 @@ function ListTickets(){
             fn(cid)
         })
     }
+
+    
+    
 // console.log(data);
     return(
         <div>
