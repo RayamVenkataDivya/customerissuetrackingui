@@ -19,6 +19,9 @@ function Login(){
             // console.log(isLoggedin)
             navigate("/dashboard")
         }
+        else{
+            navigate("/login")
+        }
     },[isLoggedin,navigate])
 
     var loginForm=useFormik({
@@ -50,12 +53,7 @@ function Login(){
 
     // var navigate=useNavigate()
 
-    React.useEffect(()=>{
-        if(!isLoggedin){
-            // console.log(isLoggedin)
-            navigate("/login")
-        }
-    },[])
+    
 
     return (
         <div className="">
