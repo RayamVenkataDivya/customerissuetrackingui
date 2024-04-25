@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "username": "praveen",
+      "password": "praveen123",
+      "role": "manager",
+      "id": "1"
+    },
+    {
+      "username": "dhritiman",
+      "password": "dhritiman123",
+      "role": "manager",
+      "id": "2"
+    },
+    {
+      "username": "rohit",
+      "password": "rohit123",
+      "role": "employee",
+      "id": "3"
+    },
+    {
+      "username": "sindhu",
+      "password": "sindhu123",
+      "role": "employee",
+      "id": "4"
+    },
+    {
+      "username": "divya",
+      "password": "divya123",
+      "role": "customer",
+      "id": "5"
+    },
+    {
+      "username": "manvi",
+      "password": "manvi123",
+      "role": "customer",
+      "id": "6"
+    },
+    {
+      "id": "4dcb",
+      "username": "nani",
+      "password": "123",
+      "role": "customer"
+    },
+    {
+      "id": "a8b5",
+      "username": "rakesh",
+      "password": "123",
+      "role": "employee"
+    },
+    {
+      "id": "2eba",
+      "username": "murari",
+      "password": "123",
+      "role": "customer"
+    },
+    {
+      "id": "a8b6",
+      "username": "govind",
+      "password": "123",
+      "role": "employee"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "6a16",
+      "issue": "ac",
+      "IssueType": "electric",
+      "image": "",
+      "date": 1713265498618,
+      "customerId": "5",
+      "customerName": "divya",
+      "status": "completed",
+      "employeeId": "a8b5"
+    },
+    {
+      "id": "dc52",
+      "issue": "maintenance",
+      "IssueType": "building",
+      "image": "",
+      "date": 1713602343712,
+      "customerId": "2eba",
+      "customerName": "murari",
+      "status": "ticketRaised",
+      "employeeId": "a8b5"
+    },
+    {
+      "id": "7cbe",
+      "issue": "wifi",
+      "IssueType": "electric",
+      "image": "",
+      "date": 1713841580922,
+      "customerId": "6",
+      "customerName": "manvi",
+      "status": "completed",
+      "employeeId": "3"
+    },
+    {
+      "id": "c25f",
+      "issue": "cooler",
+      "IssueType": "electric",
+      "image": "",
+      "date": 1714047581207,
+      "customerId": "5",
+      "customerName": "divya",
+      "status": "customer rejected"
+    },
+    {
+      "id": "c14b",
+      "issue": "high-voltage",
+      "IssueType": "electric",
+      "image": "",
+      "date": 1714047922354,
+      "customerId": "2eba",
+      "customerName": "murari",
+      "status": "completed",
+      "employeeId": "4"
+    }
+  ]
+}
